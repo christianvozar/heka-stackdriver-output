@@ -60,7 +60,7 @@ func (so *StackdriverCustomMetricOutput) Init(config interface{}) (err error) {
 
 	// Ensure Stackdriver API key value is set from TOML configuration.
 	if so.conf.APIKey == "" {
-		return fmt.Errorf("api_key must contain a Stackdriver API key.")
+		return fmt.Errorf("api_key must contain a Stackdriver API key")
 	}
 
 	// Populate StackdriverCustomMetricOutput config with values from TOML configuration.
