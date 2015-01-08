@@ -28,7 +28,7 @@ import (
 type StackdriverCustomMetric struct {
 	Name       string
 	Value      string
-	InstanceId string
+	InstanceID string
 }
 
 type StackdriverCustomMetricOutput struct {
