@@ -41,7 +41,7 @@ type StackdriverCustomMetricOutput struct {
 // Stackdriver Output config struct
 type StackdriverCustomMetricOutputConfig struct {
 	// Stackdriver API key.
-	ApiKey string `toml:"api_key"`
+	APIKey string `toml:"api_key"`
 	// Interval to send metrics to Stackdriver customer metrics API.
 	// Defaults to one minute intervals to send messages as that is the current limit from Stackdriver.
 	TickerInterval uint `toml:"ticker_interval"`
@@ -59,7 +59,7 @@ func (so *StackdriverCustomMetricOutput) Init(config interface{}) (err error) {
 	so.conf = config.(*StackdriverCustomMetricOutputConfig)
 
 	// Ensure Stackdriver API key value is set from TOML configuration.
-	if so.conf.ApiKey == "" {
+	if so.conf.APIKey == "" {
 		return fmt.Errorf("api_key must contain a Stackdriver API key.")
 	}
 
@@ -124,7 +124,7 @@ func (so *StackdriverCustomMetricOutput) Run(or OutputRunner, h PluginHelper) (e
 			}
 			pack.Recycle()
 		case <-ticker:
-			client := sd.NewStackdriverClient(so.conf.ApiKey)
+			client := sd.NewStackdriverClient(so.conf.APIKey)
 			err = client.Send(so.gwm)
 			if err != nil {
 				so.or.LogMessage(fmt.Sprintf("[StackdriverCustomMetricOutput] API submission fail: %s\n", err))
