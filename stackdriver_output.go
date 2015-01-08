@@ -71,7 +71,7 @@ func (so *StackdriverCustomMetricOutput) Init(config interface{}) (err error) {
 	return
 }
 
-// FomatUnixNano converts a Unix nanosecond-precision timestamp to a Unix seconds-precision timestamp.
+// FormatUnixNano converts a Unix nanosecond-precision timestamp to a Unix seconds-precision timestamp.
 func FormatUnixNano(t int64) int64 {
 	return int64(t / 1000000000)
 }
