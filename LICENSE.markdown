@@ -1,8 +1,7 @@
-Apache License
-Version 2.0, January 2004
-http://www.apache.org/licenses/
+# [Apache License](http://www.apache.org/licenses/)
+#### Version 2.0, January 2004
 
-TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+## TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
 
 1. Definitions.
 
@@ -67,7 +66,7 @@ other liability obligations and/or rights consistent with this License. However,
 
 END OF TERMS AND CONDITIONS
 
-Copyright 2014 [Belly, Inc.](https://bellycard.com)
+Copyright © 2014-2015 [Belly, Inc.](https://bellycard.com)
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at [http://www.apache.org/licenses/LICENSE-2.0](http://www.apache.org/licenses/LICENSE-2.0)
 
