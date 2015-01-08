@@ -12,8 +12,8 @@ The Stackdriver custom metrics API throttles requests at one per minute. This ou
 * Create or add to the file {heka_root}/cmake/plugin_loader.cmake
 
 ```
-git_clone(https://github.com/bellycard/stackdriver master)
-add_external_plugin(git https://github.com/bellycard/heka-stackdriver-output master)
+git_clone(https://github.com/christianvozar/stackdriver master)
+add_external_plugin(git https://github.com/christianvozar/heka-stackdriver-output master)
 ```
 
 * Build Heka per normal instructions for your platform.
